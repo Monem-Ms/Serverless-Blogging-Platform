@@ -1,0 +1,161 @@
+/* EditPost.css */
+.edit-post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .edit-post-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .error-message {
+    color: #e53e3e;
+    background-color: #fff5f5;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #fed7d7;
+  }
+  
+  .post-title-input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s;
+  }
+  
+  .post-title-input:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 1px #3182ce;
+  }
+  
+  .editor-wrapper {
+    margin-bottom: 1.5rem;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .save-button, .cancel-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+    border: none;
+  }
+  
+  .save-button {
+    background-color: #3182ce;
+    color: white;
+  }
+  
+  .save-button:hover:not(:disabled) {
+    background-color: #2c5282;
+  }
+  
+  .save-button:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+  }
+  
+  .cancel-button {
+    background-color: #f7fafc;
+    color: #4a5568;
+    border: 1px solid #cbd5e0;
+  }
+  
+  .cancel-button:hover:not(:disabled) {
+    background-color: #edf2f7;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 1.1rem;
+    color: #4a5568;
+  }
+  
+  .button-loading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .spinner {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Editor custom styles */
+  .EasyMDEContainer .CodeMirror {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 300px;
+    font-size: 1rem;
+  }
+  
+  .EasyMDEContainer .editor-toolbar {
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    background-color: #f7fafc;
+  }
+  .error-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .error-container p {
+    color: #e53e3e;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .back-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .back-button:hover {
+    background-color: #2c5282;
+  }
+  
+  @media (max-width: 768px) {
+    .edit-post-container {
+      padding: 1rem;
+    }
+    
+    .edit-post-container h1 {
+      font-size: 1.75rem;
+    }
+  }

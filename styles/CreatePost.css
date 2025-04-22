@@ -1,0 +1,95 @@
+/* styles/CreatePost.css */
+.create-post-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .create-post-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .create-post-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #4361ee, #3a0ca3);
+    border-radius: 2px;
+  }
+  
+  .post-title-input {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    border: none;
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 2rem;
+    color: #1a202c;
+    transition: all 0.3s ease;
+  }
+  
+  .post-title-input:focus {
+    outline: none;
+    border-bottom-color: #4361ee;
+  }
+  
+  .post-title-input::placeholder {
+    color: #a0aec0;
+    font-weight: 300;
+  }
+  
+  .create-post-button {
+    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(67, 97, 238, 0.3);
+  }
+  
+  .create-post-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.4);
+  }
+  
+  .create-post-button:active {
+    transform: translateY(0);
+  }
+  
+  /* Editor customization */
+  .EasyMDEContainer .CodeMirror {
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    min-height: 300px;
+  }
+  
+  .EasyMDEContainer .CodeMirror-focused {
+    border-color: #4361ee;
+    box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+  }
+  
+  .editor-toolbar {
+    border-radius: 8px 8px 0 0;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+  }
+  
+  .editor-toolbar button:hover {
+    background: #edf2f7;
+  }
